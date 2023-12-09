@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <link rel="stylesheet" href="xmas.css" />
+</head>
+
+<body>
+  <main>
+    <marquee class="marquee" direction="down" width="100%" height="100%" behavior="alternate">
+      <marquee behavior="alternate">
+        🕎
+        <span style="color: green">Ho</span>
+        <span style="color: red">ho</span>
+        <span style="color: green">ho!</span>
+        🎄
+      </marquee>
+    </marquee>
+    <div class="form">
+      <form id="verify-form">
+        <div class="item">
+          <label for="pass">Ann's dog's name</label>
+          <span id="status"></span>
+        </div>
+        <div class="item">
+          <input id="pass" type="text" /><button id="verify-button" type="submit">
+            Verify
+          </button>
+        </div>
+      </form>
+      <form id="submit-form">
+        <label for="name">Your name</label>
+        <select id="name">
+          <option value="" disabled selected>Select your name🎅🏼🤶🏻🧑🏼‍🎄</option>
+        </select>
+        <div class="item"></div>
+        <button id="submit-button" disabled type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <script src="xmas.js"></script>
+</body>
+
+</html>

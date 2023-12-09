@@ -1,0 +1,19 @@
+{
+    "name": "xmas",
+    "version": "1.0.0",
+    "description": "xmas 2023 gift assignment",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@aws-sdk/client-dynamodb": "^3.468.0",
+        "@aws-sdk/lib-dynamodb": "^3.468.0",
+        "aws-sdk": "^2.1515.0",
+        "eslint": "^8.0.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+        "eslint-plugin-promise": "^6.0.0",
+        "typescript": "*"
+    }
+}
