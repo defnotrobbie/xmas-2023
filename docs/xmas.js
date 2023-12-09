@@ -38,7 +38,7 @@ submitForm.addEventListener("submit", (e) => {
 
 nameInput.addEventListener("change", (e) => {
   if (e.target instanceof HTMLInputElement && !!e.target.value) {
-    submitButton.disabled = undefined;
+    submitButton.removeAttribute("disabled");
   }
 });
 
@@ -85,8 +85,8 @@ async function getList() {
     console.error(e.message);
     statusIndicator.textContent = "❌";
     verifyButton.textContent = "Re-verify";
-    verifyButton.disabled = undefined;
-    passInput.disabled = undefined;
+    verifyButton.removeAttribute("disabled");
+    passInput.removeAttribute("disabled");
     return;
   }
 
@@ -101,6 +101,6 @@ async function getList() {
   } else {
     statusIndicator.textContent = "❌";
     verifyButton.textContent = "Re-verify";
-    verifyButton.disabled = undefined;
+    verifyButton.removeAttribute("disabled");
   }
 }
