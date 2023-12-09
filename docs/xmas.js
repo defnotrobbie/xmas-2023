@@ -37,9 +37,7 @@ submitForm.addEventListener("submit", (e) => {
 });
 
 nameInput.addEventListener("change", (e) => {
-  if (e.target instanceof HTMLInputElement && !!e.target.value) {
-    submitButton.removeAttribute("disabled");
-  }
+  submitButton.removeAttribute("disabled");
 });
 
 async function submit() {
