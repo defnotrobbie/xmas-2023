@@ -38,7 +38,7 @@ submitForm.addEventListener("submit", (e) => {
 
 nameInput.addEventListener("change", (e) => {
   if (e.target instanceof HTMLInputElement && !!e.target.value) {
-    submitButton.disabled = false;
+    submitButton.disabled = undefined;
   }
 });
 
@@ -85,24 +85,22 @@ async function getList() {
     console.error(e.message);
     statusIndicator.textContent = "❌";
     verifyButton.textContent = "Re-verify";
-    verifyButton.disabled = false;
-    passInput.disabled = false;
+    verifyButton.disabled = undefined;
+    passInput.disabled = undefined;
     return;
   }
 
   await wait(150);
+  
   if (Array.isArray(data?.list)) {
     statusIndicator.textContent = "✅";
-
-    const select = document.getElementById("name");
-
     data.list.forEach((element) => {
       const option = new Option(element);
-      select.appendChild(option);
+      nameInput.appendChild(option);
     });
   } else {
     statusIndicator.textContent = "❌";
     verifyButton.textContent = "Re-verify";
-    verifyButton.disabled = false;
+    verifyButton.disabled = undefined;
   }
 }
